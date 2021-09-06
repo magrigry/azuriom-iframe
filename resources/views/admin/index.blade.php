@@ -28,7 +28,7 @@
                     <div class="input-group-text">{{ url('/iframe/i/') }}/</div>
                 </div>
                 <input placeholder="url" type="text" class="form-control" name="urls[]" value="%url_value%" required>
-                <button maxlength="69" type="button" class="btn" onclick="iframeDeleteUrl(event)"><i class="fas fa-trash-alt"></i></button>
+                <button maxlength="69" type="button" class="btn btn btn-danger ml-1" onclick="iframeDeleteUrl(event)" style="z-index: 1000;">Delete</button>
             </div>
             <div class="input-group mb-1">
                 <input placeholder="Target" maxlength="254" type="text" class="form-control" name="targets[]" value="%target_value%" required>
@@ -64,7 +64,7 @@
                 return;
             }
 
-            console.log(event.target.parentNode.parentNode.parentNode.remove())
+            event.target.parentNode.parentNode.remove()
         }
     </script>
 @endsection
