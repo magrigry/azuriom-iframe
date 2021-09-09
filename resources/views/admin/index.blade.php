@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin')
 
-@section('title', 'Admin plugin home')
+@section('title', trans('iframe::messages.height-label'))
 
 @section('content')
     <div class="card shadow mb-4">
@@ -8,7 +8,7 @@
             @csrf
 
             <div class="form-group mb-4">
-                <label for="height">{{ trans('iframe.messages.height-label') }}</label>
+                <label for="height">{{ trans('iframe::messages.height-label') }}</label>
                 <input min="1" max="9999" type="number" class="form-control" id="height" name="height" value="{{ setting('iframe.height', 82) }}" required>
             </div>
 
