@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin')
 
-@section('title', trans('iframe::messages.height-label'))
+@section('title', trans('iframe::messages.plugin-name'))
 
 @section('content')
     <div class="card shadow mb-4">
